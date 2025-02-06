@@ -1,4 +1,4 @@
-## Project1 Gavin 2/6/25
+## Project1 2/6/25 3DGameEngineConcepts
 ## Comments on column 81, 
 ## All file names and folder names are capitalized (Assets/Planets/Textures/WhitePlanet.png)
 
