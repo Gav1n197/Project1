@@ -24,7 +24,17 @@ class MyApp(ShowBase):
         self.placePlanet("Assets/Planets/protoPlanet.x", "Assets/Planets/Textures/WhitePlanet.jpg", -2700,  6200, 1270, 150)
         self.placePlanet("Assets/Planets/protoPlanet.x", "Assets/Planets/Textures/Neptune.jpg",     -2500,  6000, 970, 100)
         self.placePlanet("Assets/Planets/protoPlanet.x", "Assets/Planets/Textures/Venus.jpg",        3000, -6000, 230, 350)
-    
+        self.placePlanet("Assets/Planets/protoPlanet.x", "Assets/Planets/Textures/GreyPlanet.jpg",        -3000, -6000, 730, 250)
+
+        self.player = self.loader.loadModel("Assets/Spaceships/Dumbledore/Dumbledore.x")
+        self.player.reparentTo(self.render)
+        self.player.setHpr(0, 93, 0) ## Set rotation
+
+        self.station = self.loader.loadModel("Assets/SpaceStation/SpaceStation1B/spaceStation.x")
+        self.station.reparentTo(self.render)
+        self.station.setPos(40, 50, 23)
+        self.station.setHpr(0, 93, 0) 
+
     def placePlanet(self, planet, texture, x, y, z, scale):
         self.planet = self.loader.loadModel(planet)
         self.texture = self.loader.loadTexture(texture)
