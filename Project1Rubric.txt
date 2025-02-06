@@ -1,0 +1,12 @@
+Project1 Grading Rubric (20 Points): 
+
+Objective: Populate your scene with models.
+
+Does your program run? (5 points) (Y/N)
+Is your .zip file named properly? “Projectname_username.zip” (2 points) (Y/N)
+Is the “Stubs” package present in your project? (2.5 points) (Y/N)
+Is the “Assets” folder present in your project with all the necessary assets? (2.5 points) (Y/N)
+Do you have at least 6 planets or more in your scene? (2 points) (Y/N)
+Do you have a universe object placed in your scene that contains everything within it? (2 points) (Y/N)
+Do you have a player object placed in your scene? (2 points) (Y/N)
+Do you have a space station placed in your scene? (2 points) (Y/N)
