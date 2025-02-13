@@ -10,7 +10,7 @@ def Cloud(radius = 1):
     unitVec.normalize()
     return unitVec * radius
 
-def BaseBallSeams(step, numSeams, B, F = 1):
+def BaseballSeams(step, numSeams, B, F = 1):
     time = step / float(numSeams) * 2 * math.pi
     
     F4 = 0

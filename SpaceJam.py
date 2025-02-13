@@ -36,11 +36,12 @@ class MyApp(ShowBase):
         self.player = self.loader.loadModel("Assets/Spaceships/Dumbledore/Dumbledore.x")
         self.player.reparentTo(self.render)
         self.player.setHpr(0, 93, 0) ## Set rotation
-
-        self.SpaceStation1 = self.loader.loadModel("Assets/SpaceStation/SpaceStation1B/spaceStation.x")
-        self.SpaceStation1.reparentTo(self.render)
-        self.SpaceStation1.setPos(40, 50, 23)
-        self.SpaceStation1.setHpr(0, 93, 0) 
+        
+        self.SpaceStation1 = spaceJamClasses.SpaceStation(self.loader, "Assets/SpaceStation/SpaceStation1B/spaceStation.x", self.render, "spaceStation1", "Assets/Planets/Textures/Mercury.jpg",       (40, 50, 23), 1) 
+        #self.SpaceStation1 = self.loader.loadModel("Assets/SpaceStation/SpaceStation1B/spaceStation.x")
+        #self.SpaceStation1.reparentTo(self.render)
+        #self.SpaceStation1.setPos(40, 50, 23)
+        #self.SpaceStation1.setHpr(0, 93, 0) 
 
     def drawBaseballSeams(self, centralObject, droneName, step,numSeams, radius = 1):
         unitVec = defensePaths.BaseballSeams(step, numSeams, B = 0.4)
