@@ -27,3 +27,25 @@ def BaseballSeams(step, numSeams, B, F = 1):
     z = R * zzz / rrr
 
     return Vec3(x,y,z)
+
+def CircleX(step, fullCircle): # x = r*cos(theta) y = r*sin(theta), z = r*tan(theta)
+    theta = (step / float(fullCircle)) * 2 * math.pi
+    x = 50.0 * math.cos(theta)
+    y = 50.0 * math.sin(theta)
+    z = 0.0 * math.tan(theta)
+    return Vec3(x, y, z)
+
+def CircleY(step, fullCircle): # x = r*cos(theta) y = r*sin(theta), z = r*tan(theta)
+    theta = (step / float(fullCircle)) * 2 * math.pi
+    x = 50.0 * math.cos(theta)
+    y = 0.0 * math.sin(theta)
+    z = 50.0 * math.tan(theta)
+    return Vec3(x, y, z)
+
+def CircleZ(step, fullCircle): # x = r*cos(theta) y = r*sin(theta), z = r*tan(theta)
+    theta = (step / float(fullCircle)) * 2 * math.pi
+    x = 0.0 * math.cos(theta)
+    y = 50.0 * math.sin(theta)
+    z = 50.0 * math.cos(theta) # Changed to cosine to fix 45 degree issue
+    
+    return Vec3(x, y, z)
